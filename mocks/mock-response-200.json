@@ -1,0 +1,35 @@
+{
+  "status": 200,
+  "data": {
+    "users": [
+      {
+        "name": "Guillermo",
+        "surname": "Parral",
+        "age": 24,
+        "favorites": {
+          "foods": ["ravioles", "milanesas", "chocotorta"],
+          "music": {
+            "national": ["Soda Stereo", "El Mató a un Policía Motorizado"],
+            "international": ["Radiohead", "Pearl Jam", "White Stripes"]
+          },
+          "series": ["Breaking Bad", "Avatar", "Downton Abbey"],
+          "anime": ["Kaguya-sama", "Tora Dora"]
+        },
+        "enabled": true 
+      },
+      {
+        "name": "Jorge",
+        "surname": "McJorge",
+        "age": "42",
+        "favorites": {
+          "teams": ["Boca", "Yupanqui"],
+          "sports": ["Futbol"],
+          "foods": ["sushi", "pizza"],
+          "series": ["La Casa de Papel", "Dr. House"]
+        },
+        "enabled": false
+      }
+    ]
+    
+  }
+}
