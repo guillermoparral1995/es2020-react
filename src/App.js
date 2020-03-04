@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import UserCard from './UserCard/UserCard';
+import SuggestionCard from './UserCard/UserCard';
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      {users.map((user, idx) => <UserCard key={idx} user={user}></UserCard>)}
+      {users.map((user, idx) => <SuggestionCard key={idx} user={user}></SuggestionCard>)}
     </div>
   );
 }
