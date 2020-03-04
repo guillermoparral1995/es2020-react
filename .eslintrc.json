@@ -1,7 +1,6 @@
 {
   "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended"
+    "eslint:recommended"
   ],
   "plugins": [
     "babel"
@@ -11,6 +10,8 @@
     "ecmaVersion": 11
   },
   "rules": {
-    "quotes": ["warn", "single"]
+    "quotes": ["warn", "single"],
+    "no-unused-vars": "off",
+    "no-undef": "off"
   }
 }

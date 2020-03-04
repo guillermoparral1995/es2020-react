@@ -2,11 +2,14 @@ import React from 'react';
 import './styles.scss';
 
 
-const UserCard = ({ user }, suggestion) => {
-
+const UserCard = ({ user }, Suggestion) => {
+  console.log(user);
   const hasName = (user) => user.name ? user : throw Error('User doesn´t have name!');
-  const likesMovies = (user) => user.favorites.movies ? user : throw Error('User doesn´t like movies!');
-  const addDowntonAbbey = (user) => user.favorites.movies = [...user.favorites.movies, 'Downton Abbey'];
+  const likesMovies = (user) => user.favorites.series ? user : throw Error('User doesn´t like series!');
+  const addDowntonAbbey = (user) => {
+    user.favorites.series = [...user.favorites.series, 'Downton Abbey'];
+    return user;
+  }
   const sayGoodbye = (user) => {
     console.log(`Goodbye! ${user.name}`);
     return user;
@@ -20,7 +23,12 @@ const UserCard = ({ user }, suggestion) => {
 
   return <div className='user-card'>
     <p>{`${user.name} ${user.surname}`}</p>
+    {<Suggestion></Suggestion>}
   </div>
 }
 
-export default UserCard
+const DowntonAbbey = () => <p>Deberías ver Downton Abbey!</p>;
+
+const SuggestionCard = UserCard(?, DowntonAbbey);
+
+export default SuggestionCard
